@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  display: flex;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+.interface {
+  width: 33%;
+}
+
+#instructions {
+  border: 1px solid black;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+#input_width,
+#input_height {
+  width: 35px;
+}
+
+#pixel_canvas {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 66%;
+
+}
+
+.inputs {
+  background-color: white;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+td:after {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
+
+tr {
+  height: 0px;
+}
+
+@media only screen and (max-width: 770px) {
+  body {
+    display: block;
+  }
+  .interface {
+    width: 100%;
+  }
+  #pixel_canvas {
+    margin-top: 1em;
+    width: 100%;
+  }
+
+  #instructions {
+    border: 1px solid black;
+    padding-bottom: 1em;
+    margin-right: 0;
+  }
+
+}
